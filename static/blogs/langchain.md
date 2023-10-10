@@ -42,12 +42,3 @@ In the dynamic world of language learning, LangChain stands out as a beacon of p
 Join me as we continue to explore LangChain and other innovative platforms that are transforming language learning. Together, let's unlock a world of opportunities through effective communication and cultural understanding.
 
 *Note: The images and URLs used in this blog are for illustrative purposes and do not represent actual LangChain visuals.*
-
-<style>
-  h1 {
-    font-size: 3rem;
-  }
-  h2 {
-    font-size: 2rem;
-  }
-</style>
