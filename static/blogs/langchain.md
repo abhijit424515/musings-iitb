@@ -6,7 +6,7 @@ author: "Language Enthusiast"
 image:
   url: "https://miro.medium.com/v2/resize:fit:1200/1*-PlFCd_VBcALKReO3ZaOEg.png"
   alt: "LangChain logo and a language learning illustration."
-tags: ["language learning", "technology", "education"]
+tags: ["machine-learning", "technology", "education"]
 ---
 
 # Unveiling LangChain

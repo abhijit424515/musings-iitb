@@ -2,7 +2,6 @@
 	import dayjs from 'dayjs';
 
 	export let data;
-	console.log(data.fm);
 </script>
 
 <svelte:head>

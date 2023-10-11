@@ -1,16 +1,34 @@
 <script>
-	import BlogCard from '$lib/components/BlogCard.svelte';
-
+	import Chip from '$lib/components/Chip.svelte';
+	import Gallery from '$lib/components/Gallery.svelte';
 	export let data;
+
+	let selected_tags = {};
+	for (let i = 0; i < data.unique.length; i++) selected_tags[data.unique[i]] = false;
+
+	let results = data.data;
+	async function filter() {
+		let selected = [];
+		for (let i = 0; i < Object.keys(selected_tags).length; i++)
+			if (selected_tags[Object.keys(selected_tags)[i]])
+				selected.push(Object.keys(selected_tags)[i]);
+
+		results = await (
+			await fetch(`/api/tags/filter`, {
+				method: 'POST',
+				body: JSON.stringify({ selected }),
+				headers: {
+					'Content-Type': 'application/json'
+				}
+			})
+		).json();
+	}
 </script>
 
-<div class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 p-4">
-	{#each Object.keys(data) as post}
-		<BlogCard
-			url={post}
-			src={data[post].image.url}
-			title={data[post].title}
-			description={data[post].description}
-		/>
+<div class="flex gap-x-2 p-4">
+	{#each data.unique as tag}
+		<Chip text={tag} bind:selected={selected_tags[tag]} search={filter} />
 	{/each}
 </div>
+
+<Gallery data={results} />
