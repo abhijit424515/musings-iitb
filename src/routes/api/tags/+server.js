@@ -7,6 +7,7 @@ export async function GET() {
 	try {
 		let tags = {};
 		let blogs = await glob('static/blogs/*.md');
+		console.log(await glob('*'));
 
 		let metadata = {
 			unique: [],

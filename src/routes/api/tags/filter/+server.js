@@ -7,7 +7,8 @@ export async function POST({ request }) {
 	try {
 		const { selected } = await request.json();
 		let metadata = {};
-		let blogs = await glob('static/blogs/*.md');
+		let blogs = await glob('/blogs/*.md');
+		console.log(await glob('*'));
 
 		if (selected.length == 0) {
 			for (let i = 0; i < blogs.length; i++) {
