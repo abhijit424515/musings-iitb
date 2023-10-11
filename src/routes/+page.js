@@ -1,3 +1,16 @@
+import { browser } from '$app/environment';
+
 export async function load({ fetch }) {
-	return (await fetch(`/api/tags`)).json();
+	const res = await fetch(`/api/tags`);
+
+	// if (!browser) {
+	// 	await products;
+	// }
+	// return {
+	// 	products: { promise: products }
+	// };
+
+	console.log(!browser);
+
+	return res.json();
 }

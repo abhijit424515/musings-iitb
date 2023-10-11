@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/Blog.astro
 title: 'My First Blog Post'
 pubDate: 2022-07-01
 description: "This is the first post of my new Astro blog. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?"
