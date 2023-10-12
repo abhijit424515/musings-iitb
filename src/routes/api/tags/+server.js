@@ -1,34 +1,19 @@
-import { compile } from 'mdsvex';
 import { json } from '@sveltejs/kit';
 
-export async function GET() {
+export async function POST({ request, fetch }) {
 	try {
-		let tags = {};
-		const blogs_mappings = import.meta.glob('../../../../static/blogs/*.md', {
-			eager: true,
-			as: 'raw'
-		});
-		const blog_paths = Object.keys(blogs_mappings);
+		const { selected } = await request.json();
+		const res = await fetch(`/metadata.json`);
+		let data = await res.json();
+		let metadata = {};
 
-		let metadata = {
-			unique: [],
-			data: {}
-		};
+		if (selected.length == 0) return json(data.data);
 
-		for (let i = 0; i < blog_paths.length; i++) {
-			const filename = blog_paths[i].replace('../../../../static/blogs/', '').replace('.md', '');
-			const fm = (await compile(blogs_mappings[blog_paths[i]])).data.fm;
-
-			tags[filename] = fm.tags;
-			metadata.data[filename] = fm;
-		}
-
-		for (let i = 0; i < Object.values(tags).length; i++) {
-			let tag = Object.values(tags)[i];
-			for (let j = 0; j < tag.length; j++) {
-				if (!metadata.unique.includes(tag[j])) {
-					metadata.unique.push(tag[j]);
-				}
+		for (let i = 0; i < data.unique.length; i++) {
+			if (selected.includes(data.unique[i])) {
+				data.tag_map[data.unique[i]].forEach((x) => {
+					if (!(x in metadata)) metadata[x] = data.data[x];
+				});
 			}
 		}
 

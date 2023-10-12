@@ -14,7 +14,7 @@
 				selected.push(Object.keys(selected_tags)[i]);
 
 		results = await (
-			await fetch(`/api/tags/filter`, {
+			await fetch(`/api/tags`, {
 				method: 'POST',
 				body: JSON.stringify({ selected }),
 				headers: {
