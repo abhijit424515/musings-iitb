@@ -3,8 +3,8 @@
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
-		"dev": "node compile.js && vite dev",
-		"build": "node compile.js && vite build",
+		"dev": "vite dev",
+		"build": "vite build",
 		"preview": "vite preview",
 		"lint": "prettier --plugin-search-dir . --check .",
 		"format": "prettier --plugin-search-dir . --write ."
