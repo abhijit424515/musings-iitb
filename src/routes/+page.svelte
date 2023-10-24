@@ -25,7 +25,7 @@
 	}
 </script>
 
-<div class="flex gap-x-2 p-4">
+<div class="flex gap-x-2 p-4 w-full flex-wrap gap-2">
 	{#each data.unique as tag}
 		<Chip text={tag} bind:selected={selected_tags[tag]} search={filter} />
 	{/each}

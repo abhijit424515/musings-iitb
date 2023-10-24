@@ -2,10 +2,7 @@
 	export let src, url, title, description;
 </script>
 
-<a
-	href={url}
-	class="w-full h-[20rem] border border-gray-200 rounded-lg shadow-lg bg-[#1d1d1d] font-rubrik"
->
+<a href={url} class="w-full h-[20rem] rounded-lg shadow-xl bg-[#1d1d1d] font-rubrik">
 	<div class="h-[12rem]">
 		<img class="rounded-t-lg h-full w-full object-center object-cover" {src} alt="" />
 	</div>
