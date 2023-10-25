@@ -25,10 +25,16 @@
 	}
 </script>
 
-<div class="flex gap-x-2 p-4 w-full flex-wrap gap-2">
-	{#each data.unique as tag}
-		<Chip text={tag} bind:selected={selected_tags[tag]} search={filter} />
-	{/each}
-</div>
+<svelte:head>
+	<title>MUSINGS</title>
+</svelte:head>
 
-<Gallery data={results} />
+<div class="h-[calc(100vh-4rem)] w-full overflow-y-scroll">
+	<div class="flex gap-x-2 p-4 w-full flex-wrap gap-2">
+		{#each data.unique as tag}
+			<Chip text={tag} bind:selected={selected_tags[tag]} search={filter} />
+		{/each}
+	</div>
+
+	<Gallery data={results} />
+</div>

@@ -16,7 +16,7 @@
 	}
 
 	#blog {
-		@apply font-inter leading-relaxed text-base md:pt-24 pt-16 lg:px-32 md:px-20 sm:px-12 px-8;
+		@apply font-inter leading-relaxed text-base md:pt-24 pt-16 lg:px-32 md:px-20 sm:px-12 px-8 min-h-max;
 
 		& .container {
 			@apply max-w-2xl mx-auto p-4;
