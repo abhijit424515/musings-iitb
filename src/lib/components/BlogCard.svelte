@@ -8,12 +8,12 @@
 	</div>
 	<div class="p-4 h-[8rem]">
 		<h5
-			class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white ellipses-first font-calligraffitti"
+			class="text-center mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white ellipses-first font-calligraffitti"
 		>
 			{title}
 		</h5>
 		<p class="font-normal text-gray-700 dark:text-gray-400 ellipses-second">
-			{description}
+			{@html description}
 		</p>
 	</div>
 </a>

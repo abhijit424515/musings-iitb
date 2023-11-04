@@ -1,5 +1,8 @@
 <script>
 	import dayjs from 'dayjs';
+	import { page } from '$app/stores';
+	import { onMount } from 'svelte';
+	let liked = false;
 
 	export let data;
 
@@ -8,6 +11,8 @@
 		const { scrollTop, scrollHeight, clientHeight } = e.target;
 		percent = (scrollTop / (scrollHeight - clientHeight)) * 100;
 	}
+
+	onMount(() => (liked = Boolean(JSON.parse(localStorage.getItem($page.url.pathname)))));
 </script>
 
 <svelte:head>
@@ -36,8 +41,37 @@
 					<div>{data.fm.author}</div>
 				</div>
 			</div>
-			<!-- <div class="my-4">{data.fm.description}</div> -->
+			<div class="my-4 lg:text-[1.3rem]">{@html data.fm.description}</div>
+			<div class="bg-black h-[1px] w-4/5 mx-auto mt-8" />
 		</div>
 		{@html data.body}
 	</div>
+</div>
+
+<div
+	class="absolute bottom-0 z-10 w-full h-16 bg-l_background flex justify-center items-center duration-500"
+	style="transform: translateY({percent < 30 ? '4rem' : '0'})"
+>
+	<button
+		class="h-full"
+		on:click={() => {
+			liked = !liked;
+			localStorage.setItem($page.url.pathname, liked.toString());
+		}}
+	>
+		<svg
+			class="h-full p-4"
+			stroke="red"
+			fill={liked ? 'red' : 'none'}
+			stroke-width="2"
+			viewBox="0 0 24 24"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+			xmlns="http://www.w3.org/2000/svg"
+		>
+			<path
+				d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+			/>
+		</svg>
+	</button>
 </div>

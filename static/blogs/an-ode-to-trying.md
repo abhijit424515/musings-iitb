@@ -3,7 +3,7 @@ title: 'An Ode to Trying'
 pubDate: 2023-11-04
 read: 7
 author: "Harsh Poonia"
-description: "Dive deep into LangChain, a groundbreaking language learning platform. Learn about its features, pedagogical approach, community, and how it's transforming language education. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?"
+description: "For those who relate a little too well with '<i>this is me trying</i>'. Or, as a friend said, for when you need a little lift-me-up."
 image:
   author: "/images/authors/harsh.jpg"
   card: "/images/cards/an-ode-to-trying.jpg"
@@ -37,4 +37,6 @@ So here’s to writing your heart out, singing imperfect notes, bringing out unp
 
 
 Here’s to struggling with projects and concepts, with deadlines and tests, and honestly giving your all to get through,
+
+
 Here’s an ode to trying.
