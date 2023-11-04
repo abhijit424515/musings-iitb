@@ -5,8 +5,8 @@ read: 7
 author: "Harsh Poonia"
 description: "For those who relate a little too well with '<i>this is me trying</i>'. Or, as a friend said, for when you need a little lift-me-up."
 image:
-  author: "/images/authors/harsh.jpg"
-  card: "/images/cards/an-ode-to-trying.jpg"
+  author: "/images/authors/harsh.webp"
+  card: "/images/cards/an-ode-to-trying.webp"
   cover: "/images/covers/an-ode-to-trying.gif"
 tags: []
 ---
