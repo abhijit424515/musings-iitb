@@ -29,7 +29,7 @@
 			<div class="flex justify-between items-center gap-x-8">
 				<a
 					href="/about/"
-					class="text-black font-medium duration-200 px-3 py-2 rounded-lg hover:bg-zinc-100 flex"
+					class="text-black font-dynapuff font-medium duration-200 px-3 py-2 rounded-lg hover:bg-zinc-100 flex"
 				>
 					About Us
 				</a>
