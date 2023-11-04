@@ -36,5 +36,7 @@ This fear of being imperfect permeates into other aspects of our life. We’re a
 So here’s to writing your heart out, singing imperfect notes, bringing out unpolished moves. Here’s to trying things because they bring you joy, to putting all your soul into it without expecting every creation to be your magnum opus. Here’s to running out of breath mid-runs, and having your legs get sore after a long cycling journey. Here’s to getting ruthlessly dunked on in basketball, and, almost stubbornly, returning every time to play. Here’s to going boulder climbing, and getting stuck on the same level for weeks, falling down with all your weight and still having the audacity to begin another climb. Because what would you rather be, to excel at this? A monkey?
 
 
-Here’s to struggling with projects and concepts, with deadlines and tests, and honestly giving your all to get through,
+Here’s to struggling with projects and concepts, with deadlines and tests, and honestly giving your all to get through.
+
+
 Here’s an ode to trying.
