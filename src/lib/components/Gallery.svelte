@@ -8,7 +8,7 @@
 	{#each Object.keys(data) as post}
 		<BlogCard
 			url={post}
-			src={data[post].image.url}
+			src={data[post].image.card}
 			title={data[post].title}
 			description={data[post].description}
 		/>

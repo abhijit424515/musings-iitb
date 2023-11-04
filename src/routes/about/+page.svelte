@@ -1,23 +1,17 @@
 <div id="blog">
-	<h1>About Me</h1>
-	<p>... and my new Astro site!</p>
+	<h1>About Us</h1>
+	<p>Yet another blog. Only this time, it's yours.</p>
 	<p>
-		I am working through Astro's introductory tutorial. This is the second page on my website, and
-		it's the first one I built myself!
+		Blogs for the IIT-B populace, or as it is lovingly called, Insti Junta. These writeups struck a
+		chord with us, like resonant echoes of unspoken feelings. Hopefully you will find a part of
+		yourself within these too.
 	</p>
-	<p>
-		This site will update as I complete more of the tutorial, so keep checking back and see how my
-		journey is going!
-	</p>
-	<p>Here are a few facts about me:</p>
-	<ul>
-		<li>My name is Sarah.</li>
-		<li>I live in Canada and I work as a technical writer.</li>
-		<li>My skills are:</li>
-		<li>HTML</li>
-		<li>CSS</li>
-		<li>Javascript</li>
-		<li>React</li>
-		<li>Astro</li>
-	</ul>
+	<p>Happy Reading !</p>
 </div>
+
+<style>
+	p {
+		font-size: 1.2rem;
+		line-height: 1.8rem;
+	}
+</style>

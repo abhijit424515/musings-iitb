@@ -12,10 +12,10 @@ export default {
 				l_accent: '#cf4307'
 			},
 			fontFamily: {
-				inter: ['Inter', 'Noto Color Emoji', 'sans-serif'],
-				rubrik: ['Rubrik', 'Noto Color Emoji', 'sans-serif'],
-				roboto: ['Roboto', 'Noto Color Emoji', 'sans-serif'],
-				os: ['Open Sans', 'Noto Color Emoji', 'sans-serif']
+				manjari: ['Manjari', 'Noto Color Emoji', 'sans-serif'],
+				calligraffitti: ['Calligraffitti', 'Noto Color Emoji', 'sans-serif'],
+				ribeye: ['Ribeye', 'Noto Color Emoji', 'sans-serif'],
+				dynapuff: ['DynaPuff', 'Noto Color Emoji', 'sans-serif']
 			}
 		}
 	}

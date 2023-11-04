@@ -18,13 +18,24 @@
 	-webkit-box-orient: vertical;
 }
 
+* {
+	font-family: Manjari;
+}
+
+#grad-line {
+	background: -webkit-linear-gradient(left, #ffaa00, #f73800);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
 @layer base {
 	body {
 		@apply bg-gray-100;
 	}
 
 	#blog {
-		@apply font-inter leading-relaxed text-base md:pt-24 pt-16 lg:px-32 md:px-20 sm:px-12 px-8 min-h-max;
+		@apply leading-relaxed text-base md:pt-4 pt-4 md:pb-24 pb-16 lg:px-80 md:px-20 sm:px-12 px-8 min-h-max;
 
 		& .container {
 			@apply max-w-2xl mx-auto p-4;
@@ -43,7 +54,7 @@
 		}
 
 		& p {
-			@apply pb-4;
+			@apply pb-8 lg:text-[1.3rem] text-base;
 		}
 
 		& #avatar {
