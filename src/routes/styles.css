@@ -18,6 +18,19 @@
 	-webkit-box-orient: vertical;
 }
 
+*::-webkit-scrollbar {
+	display: none;
+}
+
+* {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+body {
+	overflow: hidden;
+}
+
 * {
 	font-family: Manjari;
 	-webkit-tap-highlight-color: transparent;
