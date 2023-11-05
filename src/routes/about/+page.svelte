@@ -3,8 +3,8 @@
 	<p>Yet another blog. Only this time, it's yours.</p>
 	<p>
 		Blogs for the IIT-B populace, or as it is lovingly called, Insti Junta. These writeups struck a
-		chord with us, like resonant echoes of unspoken feelings. Hopefully you will find a part of
-		yourself within these too.
+		chord with us, like resonant echoes of unspoken feelings. Hopefully you too will find a part of
+		yourself within these.
 	</p>
 	<p>Happy Reading !</p>
 </div>
