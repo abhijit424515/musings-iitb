@@ -1,5 +1,4 @@
 <script>
-	import Chip from '$lib/components/Chip.svelte';
 	import Gallery from '$lib/components/Gallery.svelte';
 	export let data;
 

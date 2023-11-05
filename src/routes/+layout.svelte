@@ -3,7 +3,15 @@
 	import { onMount } from 'svelte';
 	import './styles.css';
 	import Title from '../lib/icons/Title.svelte';
-	// import ToggleTheme from '../lib/components/ToggleTheme.svelte';
+	import { page } from '$app/stores';
+
+	let last_page = $page.url.pathname;
+	$: {
+		if ($page.url.pathname != last_page) {
+			loading = true;
+			last_page = $page.url.pathname;
+		}
+	}
 
 	let loading = true;
 	onMount(() => {
