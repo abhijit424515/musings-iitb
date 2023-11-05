@@ -3,7 +3,7 @@
 	import { onMount } from 'svelte';
 	import './styles.css';
 	import Title from '../lib/icons/Title.svelte';
-	import ToggleTheme from '../lib/components/ToggleTheme.svelte';
+	// import ToggleTheme from '../lib/components/ToggleTheme.svelte';
 
 	let loading = true;
 	onMount(() => {
@@ -20,12 +20,12 @@
 		<img src="/loading.svg" alt="" class="h-28" />
 	</div>
 {:else}
-	<div class="h-screen w-full overflow-hidden bg-l_background">
+	<div class="h-screen w-full bg-l_background">
 		<nav class="fixed bg-l_background flex justify-between w-full px-4 py-2 h-16 duration-200">
 			<a href="/" class="h-12 flex justify-center items-center">
 				<Title />
 			</a>
-			<ToggleTheme />
+			<!-- <ToggleTheme /> -->
 			<div class="flex justify-between items-center gap-x-8">
 				<a
 					href="/about/"

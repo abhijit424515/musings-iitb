@@ -29,7 +29,7 @@
 	<title>MUSINGS</title>
 </svelte:head>
 
-<div class="h-[calc(100vh-4rem)] w-full overflow-y-scroll">
+<div class="h-[calc(100vh-4rem)] pb-12 w-full overflow-y-scroll">
 	<div class="px-8 py-32 flex flex-col h-[calc(100vh-4rem)] justify-center">
 		<div class="mx-auto max-w-xl text-center">
 			<h1 class="font-extrabold text-[2.8rem] lg:text-[4.5rem] leading-[1.1] lg:leading-[1.1]">

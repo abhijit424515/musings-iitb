@@ -49,7 +49,7 @@ body {
 	}
 
 	#blog {
-		@apply leading-relaxed text-base md:pt-4 pt-4 md:pb-24 pb-16 lg:px-80 md:px-20 sm:px-12 px-8 min-h-max;
+		@apply leading-relaxed text-base md:pt-4 pt-4 pb-32 lg:px-80 md:px-20 sm:px-12 px-8 min-h-max;
 
 		& .container {
 			@apply max-w-2xl mx-auto p-4;
